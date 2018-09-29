@@ -382,23 +382,23 @@ end
 function formsgg(msgs) 
 local taha = ''  
 if msgs < 100 then 
-taha = 'كلش ضعيف 😫' 
+taha = 'غير متفاعل 👻' 
 elseif msgs < 500 then 
-taha = 'ضعيف 😨' 
+taha = 'آستمر بطل 💪' 
 elseif msgs < 1500 then 
-taha = 'غير متفاعل 😒' 
+taha = 'عضو نشط ⭐️' 
 elseif msgs < 5000 then 
-taha = 'متوسط 😎' 
+taha = 'متفاعل 🖖' 
 elseif msgs < 10000 then 
-taha = 'متفاعل 😘' 
+taha = 'نآيس تفاعل 🐾' 
 elseif msgs < 50000 then 
-taha = 'قمة التفاعل 😍' 
+taha = 'رئيس جمهوريه التفاعل' 
 elseif msgs < 90000 then 
-taha = 'ملك التفاعل 😻'  
+taha = 'ملك آلتفآعل 👨‍💼'  
 elseif msgs < 100000 then 
-taha = 'اسطورة التفاعل 🍃' 
+taha = 'قائد جمهوريه آلتفآعل 👋' 
 elseif msgs < 1000000 then 
-taha = 'متفاعل نار كلش 🔥' 
+taha = 'رئيس جمهوريه آلتفآعل 👋' 
 end 
 return taha 
 end
@@ -4501,7 +4501,7 @@ database:del("tshake"..bot_id..":sudo:gr")
 end
 if text == 'حذف سحكاتي' then 
 database:del('tshake:'..bot_id..'user:editmsg'..msg.chat_id_..':'..msg.sender_user_id_)
-local taha = '﴿اهلا عزيزي تم حذف سحكاتك بنجاح﴾'
+local taha = '📨┇تم حذف سحكاتك'
 send(msg.chat_id_, msg.id_, 1, taha, 1, 'md')
 end
 
@@ -4534,16 +4534,16 @@ if not database:get('tshake:'..bot_id..'id:mute'..msg.chat_id_) then
 if not database:get('tshake:'..bot_id..'id:photo'..msg.chat_id_) then
 if not database:get("tshake:gr:id:text:"..bot_id..msg.chat_id_) then 
 local keko_text = {
-' منور يالعسل👌🍯',
-" ممكن نجي خطابه يالحلو 🧡🌝",
-" دي عالم دتسولف لتلح 🌚💥",
-" حلو حلو هواي حلو شكد حلو  انت 😍",
-"وجهك بي كرش حمبي 🤣",
-" فديت الصاك 😘",
-"دي لك اجكم 👌😂 ",
+' له له مغير صورته الوصخ 😹',
+" تخليني",
+" طالع حلو^_^",
+" ياحلو مين الله جابك🤧",
+" عمي شخصيه هيه كوه🤙🏻",
+" ئمنور وليكرم 🤤",
+" يعني الوك الزين👨🏻‍🚒",
 }
 keko3 = math.random(#keko_text)
-sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_,"🖼┇"..keko_text[keko3].."\n👥┇عدد صورك ~⪼ "..all_photo_tshake.."\n🎫┇ايديك ~⪼ ("..msg.sender_user_id_..")\n📜┇معرفك ~⪼ "..keko_info.."\n📡┇موقعك ~⪼ "..t.."\n📉┇تفاعلك ~⪼ "..formsgg(msguser).."\n📨┇رسائلك ~⪼ {"..user_msgs.."}\n📧┇السحكات ~⪼ {"..edit.."}\n",msg.id_,msg.id_.."")
+sendPhoto(msg.chat_id_, msg.id_, 0, 1, nil, result.photos_[0].sizes_[1].photo_.persistent_id_,"📷┇"..keko_text[keko3].."\n👥┇عدد صورك ~⪼ "..all_photo_tshake.."\n🎫┇ايديك ~⪼ ("..msg.sender_user_id_..")\n📜┇معرفك ~⪼ "..keko_info.."\n📡┇موقعك ~⪼ "..t.."\n🌪┇تفاعلك ~⪼ "..formsgg(msguser).."\n📨┇رسائلك ~⪼ {"..user_msgs.."}\n📧┇السحكات ~⪼ {"..edit.."}\n",msg.id_,msg.id_.."")
 else 
 local tshake_new_text = database:get("tshake:gr:id:text:"..bot_id..msg.chat_id_)
 local tshake_new_text = tshake_new_text:gsub('#username',(keko_info or 'لا يوجد'))
