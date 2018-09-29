@@ -1,6 +1,6 @@
 --[[
 BY : MAXTAME
-Channel Files : https://t.me/MAXFiles
+تم كتابه الملف كاسبر {@II8IlI}لا نسمح بتغير الحقوق الا بمحادثه المبرمج
 ]]
 local function keko_MAX(data)
 local msg = data.message_
@@ -51,41 +51,41 @@ end
 local msg = data.message_
 text = msg.content_.text_
 if not database:get('MAX:'..bot_id..'rep:mute'..msg.chat_id_) then
-if text == 'حجر' then
+if text == 'هلو' then
 moody =
-'انا حجر🙃',      
-'"انا مقص🙃"',      
-'""انا ورقه🙃""',      
+'لا هلا ولا مرحبا😹💔',      
+'"هلاوات حمبي🌚"',      
+'""هلا و💯هلا""',      
 send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
   end
-if text == 'مقص' then
+if text == 'بوت' then
 moody =
-'انا مقص🙃',                          
-'"انا حجر🙃"',                          
-'""انا ورقه🙃""',                          
+'راح تبدي المصلحه اهوو احجي شتريد😒',                          
+'"نعم نعمين ثلاث نعمات😹"',                          
+'""ها يبعد دگه گلبي الالكترونيه😹♥️""',                          
 send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
   end
-if text == 'ورقه' then
+if text == 'هاي' then
 moody =
-'انا ورقه🙃',                                              
-'"انا مقص🙃"',                                              
-'""انا حجر🙃""',                                              
+'بنيه_وووف فدوه لهل انوثه ولد_تف عليك وعلى شواربك اذا عندك شوارب😾',                                              
+'"هايات"',                                              
+'""ئمنوره هايات يحلوه😉♥️""',                                              
 send(msg.chat_id_, msg.id_, 1, moody, 1, 'md')
   end
   end
-  if(text and text == 'بدأ اللعبه') and is_owner(msg) then
+  if(text and text == 'تفعيل العشوائي') and is_owner(msg) then
     if not database:get('MAX:'..bot_id..'rep:mute'..msg.chat_id_) then
-  send(msg.chat_id_, msg.id_, 1, '☑┇تم بدأ اللعبه الان اختر اما حجر او ورقه او مقص', 1, 'md')
+  send(msg.chat_id_, msg.id_, 1, '✔┇تم تفعيل الردود العشوائيه', 1, 'md')
     else
-  send(msg.chat_id_, msg.id_, 1, '☑┇ اختر حجر ام مقص ام ورقه', 1, 'md')
+  send(msg.chat_id_, msg.id_, 1, '❗┇ الردوذ العشوائيه مفعله', 1, 'md')
    database:del('MAX:'..bot_id..'rep:mute'..msg.chat_id_)
   end
   end
   if(text and text == 'تعطيل اللعبه') and is_owner(msg) then
     if database:get('MAX:'..bot_id..'rep:mute'..msg.chat_id_) then
-  send(msg.chat_id_, msg.id_, 1, '☑┇تم تعطيل اللعبه عاود اللعبه مرة اخرى اكتب بدأ اللعبه ', 1, 'md')
+  send(msg.chat_id_, msg.id_, 1, '✔┇تم تعطيل الردود العشؤايه', 1, 'md')
   else
-  send(msg.chat_id_, msg.id_, 1, '☑┇تم تعطيل اللعبه عاود اللعبه مرة اخرى اكتب بدأ اللعبه ', 1, 'md')
+  send(msg.chat_id_, msg.id_, 1, '❗┇الردود العشوائيه معطله', 1, 'md')
     database:set('MAX:'..bot_id..'rep:mute'..msg.chat_id_,true)
   end
     end
@@ -96,5 +96,5 @@ return {
 }
 --[[
 BY : MAXTAME
-Channel Files : https://t.me/MAXFiles
+Channel Files : https://t.me/MAXFile
 ]]
